@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Clean Blog')
-：@section('content')
+@section('title', 'Clean Blog - Sample Post')
+@section('content')
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/post-bg.jpg')">
     <div class="overlay"></div>
