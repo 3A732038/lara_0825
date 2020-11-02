@@ -51,7 +51,9 @@
 
 <!-- Custom scripts for this template -->
 <script src="{{asset('js/clean-blog.min.js')}}"></script>
-
+<!-- Contact Form JavaScript -->
+<script src="{{asset('js/jqBootstrapValidation.js')}}"></script>
+<script src="{{asset('js/contact_me.js')}}"></script>
 </body>
 
 </html>

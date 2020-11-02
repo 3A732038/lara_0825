@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('index');
 });*/
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('post');
+});*/
+Route::get('/', function () {
+    return view('contact');
 });
