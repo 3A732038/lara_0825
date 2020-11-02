@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Clean Blog')
+@section('title', 'Clean Blog - Contact')
 ：@section('content')
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/contact-bg.jpg')">
