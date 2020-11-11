@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Post;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,7 +26,11 @@ use Illuminate\Support\Facades\Route;
     return view('about');
 });*/
 Route::get('/', function () {
-    return view('welcome');
+    $post=new Post();
+    $post->title='test title';
+    $post->content='test content';
+    $post->save();
+
 });
 Route::get('posts', [\App\Http\Controllers\PostsController::class,'index'])->name('posts.index');
 Route::get('post', [\App\Http\Controllers\PostsController::class,'show'])->name('posts.show');
