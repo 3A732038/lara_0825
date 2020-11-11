@@ -34,8 +34,11 @@ Route::get('/', function () {
         'title'=>'test title',
         'content'=>'test content',
     ]);*/
-    $posts=Post::all();
-    dd($posts);
+    /*$posts=Post::all();
+    dd($posts);*/
+    $post=post::find(1);
+    dd($post);
+
 });
 Route::get('posts', [\App\Http\Controllers\PostsController::class,'index'])->name('posts.index');
 Route::get('post', [\App\Http\Controllers\PostsController::class,'show'])->name('posts.show');
