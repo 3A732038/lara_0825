@@ -26,11 +26,14 @@ use App\Models\Post;
     return view('about');
 });*/
 Route::get('/', function () {
-    $post=new Post();
+    /*$post=new Post();
     $post->title='test title';
     $post->content='test content';
-    $post->save();
-
+    $post->save();*/
+    Post::create([
+        'title'=>'test title',
+        'content'=>'test content',
+    ]);
 });
 Route::get('posts', [\App\Http\Controllers\PostsController::class,'index'])->name('posts.index');
 Route::get('post', [\App\Http\Controllers\PostsController::class,'show'])->name('posts.show');
